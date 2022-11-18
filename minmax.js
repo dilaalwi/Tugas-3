@@ -1,11 +1,8 @@
 let data = [1, 2, 3, 4, 5];
 
-// sort first
-data = data.sort((a, b) => a - b);
-  
 // to get the sets only
-let maxSet = data.slice(1);
-let minSet = data.slice(0, -1);
+let maxSet = data.slice(1); //menghapus data yang paling kecil pada array
+let minSet = data.slice(0, 4); //menghapus data yang paling besar pada array
 
 console.log(minSet, maxSet);
 

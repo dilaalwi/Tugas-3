@@ -1,11 +1,12 @@
-function isPrime(num) {
-    if (num <= 1) return false;
-    if (num === 2) return true;
-  
-    for (var i = 2; i < num; i++) 
-      if (num % i === 0) return false;
-      else return true;
-  }
 
-console.log(isPrime(5))
-console.log(isPrime(6))
+function angkaprima(num) {
+  if (num <= 1) return 'bukan prima';
+  if (num ===2) return 'bilangan prima';
+
+  for (var i =2; i < num; i++)
+    if (num % i === 0) return 'bukan prima';
+    else return 'bilangan prima'
+}
+
+console.log(angkaprima(5))
+console.log(angkaprima(6))
